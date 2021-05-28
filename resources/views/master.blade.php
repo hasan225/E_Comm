@@ -13,8 +13,8 @@
   <body>
       @include('header')
       <div class="container mt-5">
-           @yield('content')
-        </div>
+    </div>
+    @yield('content')
         @include('footer')
 
     <!-- Optional JavaScript; choose one of the two! -->

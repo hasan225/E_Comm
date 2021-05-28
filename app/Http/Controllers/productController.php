@@ -3,11 +3,13 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\product;
 
 class productController extends Controller
 {
     //
     function index(){
-        return "welcome to product page";
+        $data=product::all();
+        return view('product',['products'=>$data]);
     }
 }
