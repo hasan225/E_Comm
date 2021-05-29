@@ -1,3 +1,10 @@
+    <?php
+    use App\Http\Controllers\productController;
+    $total=productController::cartItem();
+
+
+    ?>
+
     <div class="mynav">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
@@ -25,7 +32,7 @@
                         </li>
 
                         <li class="nav-item me-auto">
-                            <a class="nav-link" href="#services">Cart(0)</a>
+                            <a class="nav-link" href="#services">Cart ({{$total}})</a>
                         </li>
                     </ul>
 
