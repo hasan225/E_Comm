@@ -1,7 +1,7 @@
 <!-- footer section starts -->
 
 
-<footer class="footersection p-3" style="background:#fb5200">
+<footer class="footersection p-3 mt-5" style="background:#fb5200">
 <div class="footer text-white text-center">
     <div class="row">
         <div class="col-lg-6">

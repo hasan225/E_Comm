@@ -34,7 +34,7 @@
 </div>
 
 <div class="container" style="">
-    <h2 class="mt-5">Trending Products</h2>
+    <h2 class="mt-5" id="products">Trending Products</h2>
       @foreach($products as $item)
       <div style="float:left">
          <a href="detail/{{$item['id']}}" style="text-decoration:none">

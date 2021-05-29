@@ -1,6 +1,10 @@
     <?php
     use App\Http\Controllers\productController;
-    $total=productController::cartItem();
+    $total=0;
+    if(Session::has('user')){
+
+        $total=productController::cartItem();
+    }
 
 
     ?>
@@ -17,11 +21,11 @@
                     <ul class="navbar-nav mb-2 mb-lg-0">
 
                         <li class="nav-item">
-                            <a class="nav-link active" href="#home">Home</a>
+                            <a class="nav-link active" href="/">Home</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="#projects">Projects</a>
+                            <a class="nav-link" href="#products">Products</a>
                         </li>
 
                         <li class="nav-item">
@@ -34,12 +38,25 @@
                         <li class="nav-item me-auto">
                             <a class="nav-link" href="#services">Cart ({{$total}})</a>
                         </li>
+
                     </ul>
 
             <form class="d-flex ms-auto">
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                         <button class="btn btn-outline-success" type="submit">Search</button>
                     </form>
+                    @if (Session::has('user'))
+                        <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                           {{Session::get('user')['name']}}
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="/logout">Logout</a></li>
+                        </ul>
+                        </div>
+                        @else
+                           <li><a href="/login" class="btn btn-outline-info">Login</a></li>
+                         @endif
                 </div>
             </div>
         </nav>
