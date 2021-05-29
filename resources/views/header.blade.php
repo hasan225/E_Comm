@@ -1,7 +1,7 @@
     <div class="mynav">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-                <h1 class="navbar-brand " style="color: red;font-size: 40px"><span class="stylea " style="color:rgb(0, 255, 42); font-size:50px; font-family:ul-mono-space">E-C</span>omm</h1>
+                <h1 class="navbar-brand " style="color: red;font-size: 40px"><a href="/" style="text-decoration: none"><span class="stylea " style="color:rgb(0, 255, 42); font-size:50px; font-family:ul-mono-space">E-C</span>omm</a></h1>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>

@@ -1,7 +1,7 @@
 @extends('master')
 @section('content')
 
-<div class="container customProduct" style="height: 95vh">
+<div class=" customProduct" style="height: 115vh">
     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -11,12 +11,14 @@
 
   <div class="carousel-inner">
       @foreach ($products as $item)
-         <div class="carousel-item {{$item['id']==1?'active':''}}">
-      <img src="{{$item['gallery']}}" class="d-block w-100" style="height: 650px !important;">
+             <div class="carousel-item {{$item['id']==1?'active':''}}">
+                 <a href="detail/{{$item['id']}}">
+                      <img src="{{$item['gallery']}}" class="d-block w-100" style="height: 800px !important;">
       <div class="carousel-caption d-none d-md-block" style="background: #4c75e66b;border-radius: 20px">
         <h5 >{{$item['name']}}</h5>
         <p >{{$item['description']}}.</p>
       </div>
+                 </a>
     </div>
       @endforeach
   </div>
@@ -34,9 +36,11 @@
 <div class="container" style="">
     <h2 class="mt-5">Trending Products</h2>
       @foreach($products as $item)
-      <div style="float:left;">
+      <div style="float:left">
+         <a href="detail/{{$item['id']}}" style="text-decoration:none">
       <img src="{{$item['gallery']}}" style="height: 100px" class="ms-5 me-5 m-auto text-center">
         <h5 style="width:200px">{{$item['name']}}</h5>
+      </a>
         </div>
         @endforeach
       </div>

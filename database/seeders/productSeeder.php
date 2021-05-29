@@ -19,7 +19,7 @@ class productSeeder extends Seeder
              [
              'name'=> 'Asus Zenphone Max Pro M2',
              'price'=> '17500tk',
-             'description'=> "it's a shitty smartphone made by asus",
+             'description'=> "Asus seems to have taken a leaf out of Xiaomi's book. There is no other way to describe the strategy Asus has adopted while launching its new smartphones. ",
              'category'=> 'Mobile',
              'gallery'=> 'https: //cdn57.androidauthority.net/wp-content/uploads/2018/12/asus-zenfone-max-pro-m2-1.jpg'
         ],
