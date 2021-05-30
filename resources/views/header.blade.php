@@ -29,6 +29,10 @@
                         </li>
 
                         <li class="nav-item">
+                            <a class="nav-link" href="/myorders">Orders</a>
+                        </li>
+
+                        <li class="nav-item">
                             <a class="nav-link  " aria-current="page" href="#about-us">About us</a>
                         </li>
                         <li class="nav-item">
@@ -50,13 +54,14 @@
                         <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                            {{Session::get('user')['name']}}
                         </button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" style="list-style-type: none;">
                             <li><a class="dropdown-item" href="/logout">Logout</a></li>
-                        </ul>
                         </div>
                         @else
-                           <li><a href="/login" class="btn btn-outline-info">Login</a></li>
-                         @endif
+                        <li style="list-style-type:none "class="mx-3"><a href="/login" class="btn btn-outline-info">Login</a></li>
+                        <li style="list-style-type:none"><a href="/register" class="btn btn-outline-primary">Register</a></li>
+                    </ul>
+                        @endif
                 </div>
             </div>
         </nav>

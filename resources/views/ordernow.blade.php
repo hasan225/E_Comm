@@ -31,7 +31,8 @@
 </div>
 <div class="w-50 m-auto">
 
-    <form action="" method="POST">
+    <form action="/orderplace" method="POST">
+        @csrf
 
 <div class="mb-3">
 <label for="email" class="form-label">Email address</label>
@@ -49,15 +50,15 @@
 
 <div class="form-check form-check-inline">
     <label class="payment" for="inlineCheckbox1">online Payment</label>
-    <input class="form-check-input" type="checkbox" id="payment" name="payment" value="option1">
+    <input class="form-check-input" type="checkbox" id="payment" name="payment" value="online Payment">
 </div>
 <div class="form-check form-check-inline">
     <label class="payment" for="inlineCheckbox2">EMI Payment</label>
-    <input class="form-check-input" type="checkbox" id="payment" name="payment" value="option2">
+    <input class="form-check-input" type="checkbox" id="payment" name="payment" value="EMI Payment">
 </div>
 <div class="form-check form-check-inline">
     <label class="payment" for="inlineCheckbox3">Payment On Delivery</label>
-    <input class="form-check-input" type="checkbox" id="payment" value="option3" name="payment">
+    <input class="form-check-input" type="checkbox" id="payment" value="Payment On Delivery" name="payment">
 </div>
 <h5><button type="submit" class="btn btn-outline-primary">Order Now</button></h5>
 
