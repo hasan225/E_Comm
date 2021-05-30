@@ -1,14 +1,14 @@
 <!-- footer section starts -->
 
 
-<footer class="footersection p-3 mt-5" style="background:#fb5200">
+<footer class="footersection p-3 mt-5" style="background:#fb5200" >
 <div class="footer text-white text-center">
     <div class="row">
         <div class="col-lg-6">
 
             <p class="small mb-0 mt-1">&copy; copyright Hasan Bijoy</p>
         </div>
-        <div class="col-lg-6 text-center">
+        <div class="col-lg-6 text-center ">
             <a href="#">Home</a>
             <a href=""><i class="fab fa-facebook"></i></a>
             <a href=""><i class="fab fa-whatsapp"></i></a>

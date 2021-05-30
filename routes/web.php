@@ -18,3 +18,6 @@ Route::post('/login',[userController::class,'login']);
 Route::get('/',[productController::class,'index']);
 Route::get('detail/{id}',[productController::class,'detail']);
 Route::post('/add_to_cart',[productController::class,'addToCart']);
+Route::any('/cartList',[productController::class,'cartLists']);
+Route::any('/removecart/{id}',[productController::class,'removeCart']);
+Route::any('/ordernow',[productController::class,'orderNow']);

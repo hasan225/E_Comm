@@ -25,7 +25,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="#products">Products</a>
+                            <a class="nav-link" href="/">Products</a>
                         </li>
 
                         <li class="nav-item">
@@ -36,7 +36,7 @@
                         </li>
 
                         <li class="nav-item me-auto">
-                            <a class="nav-link" href="#services">Cart ({{$total}})</a>
+                            <a class="nav-link" href="cartList">Cart ({{$total}})</a>
                         </li>
 
                     </ul>
@@ -47,7 +47,7 @@
                     </form>
                     @if (Session::has('user'))
                         <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                            {{Session::get('user')['name']}}
                         </button>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
